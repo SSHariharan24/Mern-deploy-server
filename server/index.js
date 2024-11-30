@@ -15,7 +15,7 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors(
     {
-    origin:"*",
+    origin:"https://mern-deploy-client-gf6e.onrender.com",
     methods:["GET","POST","PUT","DELETE"],
     credentials:true 
 }
