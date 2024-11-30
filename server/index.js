@@ -147,7 +147,7 @@ app.post("/forgot-password", async (req, res) => {
         from: process.env.MAIL,
         to: email,
         subject: "Reset Password",
-        text: `http://localhost:5173/reset-password/${encodedToken}`,
+        text: `https://mern-deploy-client-gf6e.onrender.com/reset-password/${encodedToken}`,
       };
   
       transporter.sendMail(mailOptions, function (error, info) {
